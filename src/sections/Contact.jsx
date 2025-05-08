@@ -10,6 +10,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    contact: "",
     message: "",
   });
 
@@ -31,7 +32,7 @@ const Contact = () => {
       );
 
       // Reset form and stop loading
-      setForm({ name: "", email: "", message: "" });
+      setForm({ name: "", email: "", message: "", contact: "" });
     } catch (error) {
       console.error("EmailJS Error:", error); // Optional: show toast
     } finally {
@@ -63,6 +64,18 @@ const Contact = () => {
                     value={form.name}
                     onChange={handleChange}
                     placeholder="What’s your good name?"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="contact">Your Phone</label>
+                  <input
+                    type="text"
+                    id="contact"
+                    name="contact"
+                    value={form.contact}
+                    onChange={handleChange}
+                    placeholder="What's your phone no"
                     required
                   />
                 </div>

@@ -251,18 +251,22 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    url: "https://www.instagram.com/monsaalif272/",
   },
   {
     name: "fb",
     imgPath: "/images/fb.png",
+    url: "https://www.facebook.com/profile.php?id=100043385196076",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    url: "https://www.instagram.com/monsaalif272/",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/monsaf-ali-/",
   },
 ];
 
